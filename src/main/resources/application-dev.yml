@@ -38,3 +38,9 @@ spring:
       auto-commit-interval: 1000
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5627
