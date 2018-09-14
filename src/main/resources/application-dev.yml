@@ -1,0 +1,27 @@
+spring:
+  #rabbitmq:
+    #username: guest
+    #password: guest
+    #port: 5627
+    #host: localhost
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_sms
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
